@@ -20,7 +20,7 @@ func (s *Server) Start() {
 	}
 }
 
-func LogRequest(w http.ResponseWriter, r *http.Request) {
+func LogRequest(r *http.Request) {
 	log.Println("Recieved a request: ")
 	log.Printf("Method; %s\n", r.Method)
 	log.Printf("URL: %s\n", r.URL)
@@ -28,5 +28,4 @@ func LogRequest(w http.ResponseWriter, r *http.Request) {
 	for key, value := range r.Header {
 		log.Printf("%s : %v", key, value)
 	}
-	fmt.Fprintf(w, "Request Logged\n")
 }

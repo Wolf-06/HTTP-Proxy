@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", intr.LogRequest)
-
+	http.HandleFunc("/", intr.HandleRequest)
+	http.HandleFunc("/testcat_an.html", intr.HandleRequest)
 	server := intr.Server{":8080"}
 	server.Start()
 }
