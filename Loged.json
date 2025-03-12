@@ -1,0 +1,93 @@
+[
+{
+"Id": 1,
+"Request": {
+"Method": "GET",
+"Url": {
+"Scheme": "http",
+"Opaque": "",
+"User": null,
+"Host": "www.testingmcafeesites.com",
+"Path": "/testcat_be.html",
+"RawPath": "",
+"OmitHost": false,
+"ForceQuery": false,
+"RawQuery": "",
+"Fragment": "",
+"RawFragment": ""
+},
+"headers": {
+"Accept": [
+"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8"
+],
+"Accept-Encoding": [
+"gzip, deflate"
+],
+"Accept-Language": [
+"en-GB,en;q=0.8"
+],
+"Cache-Control": [
+"max-age=0"
+],
+"Proxy-Connection": [
+"keep-alive"
+],
+"Referer": [
+"http://www.testingmcafeesites.com/index.html"
+],
+"Sec-Gpc": [
+"1"
+],
+"Upgrade-Insecure-Requests": [
+"1"
+],
+"User-Agent": [
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+]
+},
+"body": ""
+},
+"Response": {
+"Status Code": 200,
+"Headers": {
+"Accept-Ranges": [
+"bytes"
+],
+"Cache-Control": [
+"private, no-store, no-cache, must-revalidate"
+],
+"Connection": [
+"keep-alive"
+],
+"Content-Length": [
+"537"
+],
+"Content-Type": [
+"text/html"
+],
+"Date": [
+"Thu, 06 Mar 2025 05:05:00 GMT"
+],
+"Etag": [
+"\"0d6835d694bd81:0\""
+],
+"Last-Modified": [
+"Fri, 08 Apr 2022 16:54:52 GMT"
+],
+"Server": [
+"Microsoft-IIS/10.0"
+],
+"Server-Timing": [
+"intid;desc=cafa10c6dd06d41f"
+],
+"Sn": [
+"EC2AMAZ-BSL60ON"
+],
+"X-Powered-By": [
+"ASP.NET"
+]
+},
+"body": ""
+}
+}
+]

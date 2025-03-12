@@ -2,13 +2,15 @@ package res
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 )
 
+// Structures
 type Server struct {
 	Port string
 }
+
+//Functions
 
 func (s *Server) Start() {
 	addr := s.Port
@@ -17,15 +19,5 @@ func (s *Server) Start() {
 	if err != nil {
 		fmt.Println(err)
 		return
-	}
-}
-
-func LogRequest(r *http.Request) {
-	log.Println("Recieved a request: ")
-	log.Printf("Method; %s\n", r.Method)
-	log.Printf("URL: %s\n", r.URL)
-	log.Println("Header: ")
-	for key, value := range r.Header {
-		log.Printf("%s : %v", key, value)
 	}
 }

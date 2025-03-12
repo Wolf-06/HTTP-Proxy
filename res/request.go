@@ -1,13 +1,15 @@
 package res
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"net/url"
 )
 
 func HandleRequest(w http.ResponseWriter, req *http.Request) {
-	LogRequest(req)
+	fmt.Println("Recieved req")
+	setReq(req)
 	targetURL, Url_err := url.Parse("http://www.testingmcafeesites.com/")
 	if Url_err != nil {
 		log.Fatalf("Error while url parsing: ", Url_err)
@@ -23,6 +25,7 @@ func HandleRequest(w http.ResponseWriter, req *http.Request) {
 		log.Fatalf("Error sending the request: ", resp_err)
 	}
 	copyResponse(w, resp)
+	setResp(resp)
 }
 
 func cloneRequest(req *http.Request, targetUrl *url.URL) *http.Request {
